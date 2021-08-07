@@ -1,0 +1,20 @@
+.aboutBox {
+  height: 89px;
+  width: 26.3rem;
+  border: 0.7px solid rgb(112, 112, 112);
+  background-color: rgb(51, 51, 51);
+  color: var(--clr-primary-color);
+}
+
+.aboutBox > p {
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.aboutBox > :nth-child(2) {
+  /* margin-top: 0.1rem; */
+}
+span {
+  color: blue;
+}

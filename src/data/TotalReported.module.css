@@ -1,0 +1,40 @@
+.reportedCases_list {
+  text-align: center;
+  color: var(--clr-primary-color);
+}
+.top {
+  color: var(--clr-primary-color);
+  font-weight: lighter;
+}
+li {
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+.sideBySide {
+  display: flex;
+  margin-top: -1.3rem;
+  margin-bottom: -0.6rem;
+}
+.sideBySide > :nth-child(1) {
+  margin-left: 0.3rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.colorRed {
+  color: red;
+}
+.colorGreen {
+  color: rgb(0, 211, 0);
+}
+.sideBySide > :nth-child(2) {
+  margin-left: 0.7rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}

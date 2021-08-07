@@ -1,0 +1,15 @@
+.card {
+  border: 0.7px solid rgb(112, 112, 112);
+  background-color: rgb(51, 51, 51);
+  width: 13rem;
+  transition: 0.1s linear all;
+}
+
+.card:hover {
+  background-color: rgb(77, 77, 77);
+}
+@media screen and (max-width: 749px) {
+  .card {
+    width: 97%;
+  }
+}
