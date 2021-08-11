@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: 97%;
   }
 
   .main-heading > :nth-child(1) {

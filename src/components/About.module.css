@@ -19,5 +19,6 @@ span {
   .aboutBox {
     width: 97vw;
     margin-right: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 }
