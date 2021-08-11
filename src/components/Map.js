@@ -57,7 +57,7 @@ const Map = (props) => {
     <div className={classes["map__container"]}>
       <MapContainer
         center={defaultPosition}
-        style={{ width: "880px", height: "380px" }}
+        style={{ width: "100%", height: "100%" }}
         className={classes["map__container"]}
         zoom={1.5}
         zoomControl={false}

@@ -53,39 +53,43 @@ function App() {
             colorD={"red"}
           ></TotalReported>
         </div>
-        <div className={classes.firstColumn}>
-          <div>
-            <Map onChange={sendToMap1}></Map>
-          </div>
+        <div className={classes.secondColumn}>
+          <Map onChange={sendToMap1}></Map>
+
           <Map1 onChange={colorD}></Map1>
         </div>
-
-        <div className={classes.firstColumn}>
-          <ReportedCases
-            key={Recovered_cases.id}
-            cases={Recovered_cases.cases}
-            category={Recovered_cases.category}
-            type={Recovered_cases.type}
-          ></ReportedCases>
-          <TotalReported
-            key={5}
-            type={"TotalRecovered"}
-            number={13}
-            colorD={"green"}
-          ></TotalReported>
+        <div className={classes["thirdColumn"]}>
+          <div className={classes["third_sub_Column"]}>
+            <div className={classes["third_sub_first_sub_Column"]}>
+              <ReportedCases
+                key={Recovered_cases.id}
+                cases={Recovered_cases.cases}
+                category={Recovered_cases.category}
+                type={Recovered_cases.type}
+              ></ReportedCases>
+              <TotalReported
+                key={5}
+                type={"TotalRecovered"}
+                number={13}
+                colorD={"green"}
+              ></TotalReported>
+            </div>
+            <div className={classes["third_sub_second_sub_Column"]}>
+              <ReportedCases
+                key={total_deaths.id}
+                cases={total_deaths.cases}
+                category={total_deaths.category}
+                type={total_deaths.type}
+              ></ReportedCases>
+              <TotalReported
+                key={6}
+                type={"deaths"}
+                number={13}
+              ></TotalReported>
+            </div>
+          </div>
+          <About></About>
         </div>
-        <div className={classes.firstColumn}>
-          <ReportedCases
-            key={total_deaths.id}
-            cases={total_deaths.cases}
-            category={total_deaths.category}
-            type={total_deaths.type}
-          ></ReportedCases>
-          <TotalReported key={6} type={"deaths"} number={13}></TotalReported>
-        </div>
-      </div>
-      <div className={classes.about}>
-        <About></About>
       </div>
     </div>
   );

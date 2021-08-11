@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Line } from "react-chartjs-2";
 import classes from "./Map1.module.css";
 
@@ -80,7 +80,7 @@ const Map1 = (props) => {
     <div className={classes.map}>
       <Line
         type="line"
-        width={"880px"}
+        width={"100%"}
         color={"red"}
         data={state}
         options={{

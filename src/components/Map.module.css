@@ -1,8 +1,9 @@
 .map__container {
-  /* min-width: 880px; */
-  min-height: 350px;
+  width: 56.3vw;
+  height: 380px;
   position: relative;
 }
+
 .btn {
   position: absolute;
   right: 0rem;
@@ -66,4 +67,21 @@
 
 .show {
   height: 80px;
+}
+@media screen and (max-width: 1310px) {
+  .map__container {
+    width: 77.2vw;
+  }
+}
+@media screen and (max-width: 920px) {
+  .map__container {
+    width: 97vw;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  .btn {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.7rem;
+  }
 }

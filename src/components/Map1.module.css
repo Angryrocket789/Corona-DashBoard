@@ -1,6 +1,18 @@
 .map {
-  min-width: 880px;
-  min-height: 278px;
+  width: 56.3vw;
+  height: 278px;
   border: 0.7px solid rgb(112, 112, 112);
   background-color: rgb(37, 37, 37);
+}
+@media screen and (max-width: 1310px) {
+  .map {
+    width: 77.2vw;
+  }
+}
+@media screen and (max-width: 920px) {
+  .map {
+    width: 97vw;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+  }
 }
